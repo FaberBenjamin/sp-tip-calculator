@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+
+  <body>
+    <div class="flex_container">
+      <div class="flex_subcontainer">
+        <h2>Bill</h2>
+        <div class="input_container">
+          <img src="./images/icon-dollar.svg" alt="" />
+          <input id="bill" type="text" value="" placeholder="0" />
+        </div>
+        <h2>Select Tip %</h2>
+        <div class="button_container">
+          <div class="buttom_line_container">
+            <button id="5" value="1.05" class="basic percentage">5%</button>
+            <button id="10" value="1.10" class="basic percentage">10%</button>
+            <button id="15" value="1.15" class="basic percentage">15%</button>
+          </div>
+          <div class="buttom_line_container">
+            <button id="25" value="1.25" class="basic percentage">25%</button>
+            <button id="30" value="1.30" class="basic percentage">30%</button>
+            <button class="basic percentage" id="custom">Custom</button>
+          </div>
+        </div>
+        <input
+          class="invisible"
+          id="customInput"
+          type="number"
+          value=""
+          placeholder="Enter custom percentage"
+        />
+        <h2>Number of People</h2>
+
+        <div class="input_container">
+          <img src="./images/icon-person.svg" alt="" />
+          <input id="people" type="text" value="1" placeholder="1" />
+        </div>
+      </div>
+
+      <div class="flex_subcontainer right_subcontainer">
+        <div class="output_container">
+          <div>
+            <h3>Tip Amount</h3>
+            <p>/ person</p>
+          </div>
+          <h2 id="tip">0 ft</h2>
+        </div>
+
+        <div class="output_container">
+          <div>
+            <h3>Total</h3>
+            <p>/ person</p>
+          </div>
+          <h2 id="total">0 ft</h2>
+        </div>
+
+        <button id="reset">RESET</button>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
